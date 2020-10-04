@@ -5,9 +5,12 @@
   </div>
 <% end %>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light home-nav">
   <div class="container">
-    <%= link_to Rails.configuration.application_name, root_path, class: "navbar-brand" %>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "htg-logo.png", class: "htg-logo" %>
+    <% end %>
+    <%# Rails.configuration.application_name %>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,6 +18,29 @@
 
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item"><%= link_to 'About', '#', class: "nav-link" %></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">BLINC</a>
+            <a class="dropdown-item" href="#">Co-working Spaces</a>
+            <a class="dropdown-item" href="#">Ebook Designs & Publishing</a>
+            <a class="dropdown-item" href="#">Elibrary Access</a>
+             <a class="dropdown-item" href="#">Excursion</a>
+              <a class="dropdown-item" href="#">HTG Academy</a>
+             <a class="dropdown-item" href="#">Library Spaces</a>
+            <a class="dropdown-item" href="#">Online Book Store</a>
+             <a class="dropdown-item" href="#">Rental</a>
+            
+           
+            <%# <div class="dropdown-divider"></div> %>
+           
+          </div>
+        </li>
+        <li class="nav-item"><%= link_to 'Blog', '#', class: "nav-link" %></li>
+        <li class="nav-item"><%= link_to 'Support', '#', class: "nav-link" %></li>
       </ul>
 
       <ul class="navbar-nav">
