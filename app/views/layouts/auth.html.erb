@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sign up | Ibom elibrary</title>
+    <meta name="description" content="Ibom elibrary" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Custom CSS -->
+    <%= stylesheet_link_tag 'auth/style', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'auth/app', 'data-turbolinks-track': 'reload' %>  
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+
+
+
+</head>
+
+<body>
+
+		<!-- HK Wrapper -->
+	<div class="hk-wrapper">
+
+        <!-- Main Content -->
+        <div class="hk-pg-wrapper hk-auth-wrapper">
+            <header class="d-flex justify-content-between">
+            <%= link_to root_path, class: "d-flex auth-brand align-items-center" do %>
+                <%= image_tag "htg-logo.png", class: "htg-logo brand-img d-inline-block mr-5" %>
+            <% end %>
+               
+                <div class="btn-group btn-group-sm">
+                    <a href="#" class="btn btn-outline-secondary">Help</a>
+                    <a href="#" class="btn btn-outline-secondary">About Us</a>
+                </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-5 pa-0">
+                        <div class="auth-cover-img overlay-wrap" style="background-image:url(<%= asset_path 'elibrary_open.jpg' %>);">
+                            <div class="auth-cover-info py-xl-0 pt-100 pb-50">
+                                <div class="auth-cover-content w-xxl-75 w-sm-90 w-100">
+                                    <h1 class="display-3 text-white mb-20">Enjoy unlimited beautiful display content area</h1>
+                                    <p class="text-white">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>
+                            
+                                </div>
+                            </div>
+                            <div class="bg-overlay bg-trans-dark-50"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 pa-0">
+                        <div class="auth-form-wrap py-xl-0 py-50">
+                            <div class="auth-form w-xxl-55 w-xl-75 w-sm-90 w-100">
+                                
+                                <%= yield %>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /HK Wrapper -->
+
+</body>
+
+</html>

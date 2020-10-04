@@ -10,6 +10,15 @@ module Admin
 
     def authenticate_admin
       # TODO Add authentication logic here.
+      if user_signed_in?
+        return if current_user.admin === true
+
+        flash[:error] = 'You need to be an admin perform that action'
+        redirect_to root_path
+      else
+        flash[:error] = 'You need to be an login to perform that action'
+        redirect_to new_user_session_path
+      end
     end
 
     # Override this value to specify the number of elements to display at a time
