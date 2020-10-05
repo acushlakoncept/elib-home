@@ -146,3 +146,26 @@
   font-weight: 900;
   color: #1c4567;
 }
+
+.carousel {
+
+    &-header,
+    &-p {
+        background-color: #1c45679d;
+        display: inline-block;
+        padding: .2rem 1rem;
+        border-radius: 8px;
+        color: #fff;
+    }
+
+    &-header {
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        text-shadow: 1px 2px 4px rgba($color: #000000, $alpha: 0.5);
+    }
+
+    &-p {
+        font-size: 1.8rem;
+        margin-top: -2px;
+    }
+}
