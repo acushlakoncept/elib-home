@@ -1,3 +1,4 @@
+
 .home-slider {
     margin-top: -66px;
 }
@@ -23,14 +24,6 @@
         @media screen and (min-width: 600px){
             width: 15rem;
         }
-
-        // @media screen and (max-width: 900px){
-        //     width: 20rem;
-        // }
-
-        // @media screen and (max-width: 1000px){
-        //     width: 14rem;
-        // }
     }
 
     &--btn {
@@ -49,4 +42,96 @@
     background-color: #53c7e9;
     border-color: #53c7e9;
     box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: 0.2);
+}
+
+.section {
+    padding: 5rem 2rem;
+    background-color: #def1f6;
+    overflow: hidden;
+
+    @media screen and (min-width: 550px){
+        padding: 8rem 5rem;
+    }
+
+    &-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+
+        @media screen and (min-width: 900px){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .header-sub{
+        text-transform: uppercase;
+        font-size: 14px;
+        position: relative;
+        left: 7rem;
+
+        &::before {
+            content: '';
+            width: 6.5rem;
+            height: 2px;
+            background-color: #1c4567;
+            position: absolute;
+            left: -7rem;
+            top: calc(50% - 2px);
+        }
+    }
+
+    .head-primary {
+        font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: #1c4567;
+
+        @media screen and (min-width: 550px){
+            font-size: 4.5rem;
+            letter-spacing: -2px;
+        }
+
+
+        .head-secondary {
+            color: #53c7e9;
+            text-transform: capitalize;
+            font-size: 1.7rem;
+            margin-top: -1rem;
+            display: block;
+
+            @media screen and (min-width: 550px){
+                font-size: 3.5rem;
+                margin-top: -1.8rem;
+            }
+
+            @media screen and (min-width: 680px){
+                font-size: 4rem;
+            }
+        }
+    }
+
+
+    .about-img {
+        max-width: 100%;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 2px 1px 4px rgba(0,0,0, 0.3);
+
+        @media screen and (min-width: 550px){
+            border-top-left-radius: 6rem;
+            border-bottom-right-radius: 6rem;
+        }
+
+        @media screen and (min-width: 680px){
+            border-top-left-radius: 10rem;
+            border-bottom-right-radius: 10rem;
+        }
+
+        &:hover {
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+    }
 }
