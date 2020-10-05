@@ -7,8 +7,7 @@ class HomeController < ApplicationController
     render layout: 'auth'
   end
 
-  def about
-  end
+  def about; end
 
   def terms; end
 
