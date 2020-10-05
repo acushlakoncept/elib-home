@@ -1,14 +1,13 @@
+# frozen_string_literal: true
+
 class HomeController < ApplicationController
-  def index
-  end
+  def index; end
 
   def book
-    render :layout => 'auth'
+    render layout: 'auth'
   end
 
-  def terms
-  end
+  def terms; end
 
-  def privacy
-  end
+  def privacy; end
 end
