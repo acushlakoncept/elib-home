@@ -2,26 +2,29 @@
 
     <div class="top__box">
         <%= image_tag "booking.jpg", class: "top__box--img rounded", alt: "booking" %>
-        <button class="top__box--btn btn btn-htg">Book Now</button>
+        <button class="top__box--btn btn btn-htg"><span class="htg-b">EVENTS</span><br>Book Now</button>
     </div>
 
     <div class="top__box">
         <%= image_tag "demo.jpg", class: "top__box--img rounded", alt: "request demo" %>
-        <button class="top__box--btn btn btn-htg">Request a Demo</button>
+        <button class="top__box--btn btn btn-htg"><span class="htg-b">BLINC  All-in-one tech school solution</span><br>Request a Demo</button>
 
     </div>
 
     <div class="top__box">
         <%= image_tag "tryit.jpg", class: "top__box--img rounded", alt: "try it" %>
         <%= link_to new_user_session_path do %>
-        <button class="top__box--btn btn btn-htg">Try it/Signup</button>
+        <h4></h4>
+        <button class="top__box--btn btn btn-htg"><span class="htg-b">Online Public Access Catalog</span><br>Try it</button>
         <% end %>
     </div>
 
     <div class="top__box">
+        <h4 class="bg-light"></h4>
         <%= image_tag "registration.jpg", class: "top__box--img rounded", alt: "registration" %>
+        
         <%= link_to new_user_session_path do %>       
-        <button class="top__box--btn btn btn-htg">Register Now</button>
+        <button class="top__box--btn btn btn-htg"><span class="htg-b">HTG Academy</span><br>Register Now</button>
         <% end %>
     </div>
 

@@ -15,7 +15,7 @@
 
     &:hover {
       box-shadow: 1px 1px 0.5px rgba($color: #000000, $alpha: 0.1);
-      transform: scale(1.02);
+      transform: translateY(-2px) scale(1.1);
     }
 
     @media screen and (min-width: 600px) {
@@ -131,9 +131,18 @@
     }
   }
 
+  &:hover .about-img:hover {
+      transform: scale(1.2);
+  }
+
   .paragraph {
     color: rgb(66, 66, 66) !important;
     font-size: 1.1rem;
     text-align: justify;
   }
+}
+
+.htg-b {
+    font-weight: 900;
+    color: #1c4567;
 }
