@@ -8,6 +8,7 @@
 @import "jumpstart/sticky-footer";
 @import "jumpstart/announcements";
 @import "home";
+@import "about";
 
 // Fixes bootstrap nav-brand container overlap
 @include media-breakpoint-down(xs) {
@@ -32,8 +33,8 @@ body > .alert {
   background-color: rgba($color: #fff, $alpha: 0.2);
 
   .nav-link {
-    color: #000 !important;
-    text-shadow: 1px 1px 1px rgba($color: #000000, $alpha: 0.3);
-    font-weight: 400;
+    // color: #000 !important;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
   }
 }

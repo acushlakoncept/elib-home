@@ -1,0 +1,23 @@
+.about { 
+   background-image: image-url('about.jpg'); 
+   background-position: top left;
+}
+
+.about-head {
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    @media screen and (min-width: 850px) {
+        font-size: 3rem;
+      }
+}
+
+.head-p {
+    @media screen and (min-width: 850px) {
+        width: 50%;
+      }
+}
+
+.about-content {
+    max-width: 768px;;
+}
