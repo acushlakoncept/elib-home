@@ -30,10 +30,15 @@
         <div class="hk-pg-wrapper hk-auth-wrapper">
             <header class="d-flex justify-content-between">
             <%= link_to root_path, class: "d-flex auth-brand align-items-center" do %>
-                <%= image_tag "htg-logo.png", class: "htg-logo brand-img d-inline-block mr-5" %>
+                <%#= image_tag "htg-logo.png", class: "htg-logo brand-img d-inline-block mr-5" %>
             <% end %>
+
+            <%= link_to root_path, class: "d-flex auth-brand align-items-center" do %>
+                        <%= image_tag "ibom-logo.png", class: "htg-logo brand-img d-inline-block mr-5" %>
+                    <% end %>
                
                 <div class="btn-group btn-group-sm">
+                    
                     <%= link_to 'Home', root_path, class: "btn btn-outline-secondary" %>
                     <%= link_to 'About', about_path, class: "btn btn-outline-secondary" %>
                 </div>
