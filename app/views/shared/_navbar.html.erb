@@ -18,33 +18,30 @@
 
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        
+      </ul>
+
+      <ul class="navbar-nav">
         <li class="nav-item"><%= link_to 'About', '#', class: "nav-link" %></li>
+        <li class="nav-item"><%= link_to "What's New", announcements_path, class: "nav-link #{unread_announcements(current_user)}" %></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">BLINC</a>
-            <a class="dropdown-item" href="#">Co-working Spaces</a>
+            <a class="dropdown-item" href="http://opac.theibomelibrary.com/">Elibrary Access</a>
+            <a class="dropdown-item" href="https://blinc.com.ng/">BLINC</a>
             <a class="dropdown-item" href="#">Ebook Designs & Publishing</a>
-            <a class="dropdown-item" href="#">Elibrary Access</a>
-             <a class="dropdown-item" href="#">Excursion</a>
-              <a class="dropdown-item" href="#">HTG Academy</a>
-             <a class="dropdown-item" href="#">Library Spaces</a>
-            <a class="dropdown-item" href="#">Online Book Store</a>
-             <a class="dropdown-item" href="#">Rental</a>
-            
-           
+            <a class="dropdown-item" href="http://htgacademy.com/">HTG Academy</a>
+            <a class="dropdown-item" href="#">Excursion</a>
+            <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="https://form.jotform.com/203302000567540">Rentals</a>
             <%# <div class="dropdown-divider"></div> %>
            
           </div>
         </li>
         <li class="nav-item"><%= link_to 'Blog', '#', class: "nav-link" %></li>
         <li class="nav-item"><%= link_to 'Support', '#', class: "nav-link" %></li>
-      </ul>
-
-      <ul class="navbar-nav">
-        <li class="nav-item"><%= link_to "What's New", announcements_path, class: "nav-link #{unread_announcements(current_user)}" %></li>
         <% if user_signed_in? %>
 
         <li class="nav-item">
