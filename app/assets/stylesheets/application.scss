@@ -20,12 +20,14 @@ body > .alert {
   margin-bottom: 0;
 }
 
-.navbar-brand {
+.navbar-brand, 
+.navbar { 
     padding-top: 0;
 }
 
 .htg-logo {
-  max-height: 45px;
+  max-height: 55px;
+  padding-top: 10px;
 }
 
 .home-nav {
